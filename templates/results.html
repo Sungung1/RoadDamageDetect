@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet">
+    <title>결과</title>
+    <style>
+        body {
+            background-color: #f0f2f5;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }
+        .result-container {
+            background: white;
+            padding: 40px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            text-align: center;
+        }
+        .result-container h1 {
+            font-size: 28px;
+            margin-bottom: 20px;
+            color: #343a40;
+        }
+        .btn-custom {
+            background-color: #007bff;
+            color: white;
+            margin-top: 20px;
+            width: 100%;
+        }
+        .btn-custom:hover {
+            background-color: #0056b3;
+        }
+        img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 8px;
+            margin-bottom: 20px;
+        }
+        .footer {
+            margin-top: 40px;
+            color: #6c757d;
+            font-size: 14px;
+        }
+        .footer a {
+            color: #007bff;
+            text-decoration: none;
+        }
+        .footer a:hover {
+            text-decoration: underline;
+        }
+        .icon {
+            color: #007bff;
+            margin-right: 10px;
+        }
+    </style>
+</head>
+<body>
+    <div class="result-container">
+        <h1><i class="fas fa-check icon"></i>결과</h1>
+        <img src="{{ url_for('static', filename='results/output.jpg') }}" alt="결과 이미지">
+        <a href="/" class="btn btn-custom"><i class="fas fa-arrow-left"></i> 메인 페이지로 돌아가기</a>
+    </div>
+    <div class="footer">
+        <p>&copy; 2024 도로 상태 감지기. All rights reserved. <a href="https://github.com/username/project" target="_blank"><i class="fab fa-github"></i> 프로젝트 GitHub</a></p>
+    </div>
+</body>
+</html>
